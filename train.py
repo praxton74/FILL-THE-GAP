@@ -56,11 +56,5 @@ plt.grid(True)
 plt.gca().set_ylim(0,1)
 plt.show()
 
-
 model.evaluate(test_gen, batch_size=batch_size)
-
 model.save('my_model_5epochs_cifar')
-
-# HELP FROM:
-# https://github.com/ayulockin/deepimageinpainting/blob/master/Image_Inpainting_Autoencoder_Decoder_v2_0.ipynb
-# https://keras.io/examples/vision/oxford_pets_image_segmentation/
