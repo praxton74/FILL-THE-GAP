@@ -1,4 +1,4 @@
-# Image Inpainting using a U-Net model 
+# Image Filling using a U-Net model 
 
 In this project, I've have tried making use of a fused-encoder architecture with the [U-Net](https://arxiv.org/abs/1505.04597) model for the task of Image Filling
 
