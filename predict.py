@@ -3,14 +3,6 @@ from utils.visualise import display
 import numpy as np
 import cv2
 
-# Uncomment this metric function and compile using it if error while load_model
-# def dice_coef(y_true, y_pred):
-#     y_true_f = tf.keras.backend.flatten(y_true)
-#     y_pred_f = tf.keras.backend.flatten(y_pred)
-#     intersection = tf.keras.backend.sum(y_true_f * y_pred_f)
-#     return (2. * intersection) / (tf.keras.backend.sum(y_true_f + y_pred_f))
-
-
 def mask_image(self, image):
     mask = np.full((32,32,3), 255, np.uint8)
     r = np.random.choice(range(2,20)) # image size is 32, so taken 2 padding on sides for masking.
