@@ -3,7 +3,6 @@ import numpy as np
 import cv2
 
 class data_generator(keras.utils.Sequence):
-    """Helper to iterate over the data (as Numpy arrays)."""
 
     def __init__(self, batch_size, img_size, x_images, y_images):
         self.batch_size = batch_size
@@ -24,7 +23,6 @@ class data_generator(keras.utils.Sequence):
         return len(self.x_images) // self.batch_size # 45000//batch_size
 
     def __getitem__(self, idx):
-        """Returns tuple (input, target) correspond to batch #idx."""
         i = idx * self.batch_size
 
         batch_input_img = self.x_images[i : i + self.batch_size]
